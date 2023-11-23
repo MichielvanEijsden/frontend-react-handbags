@@ -1,6 +1,10 @@
 import './App.css'
 import Button from "./components/Button.jsx";
 import Product from "./components/Product.jsx";
+import theHandyBag from './assets/bag_1.png'
+import theStylishBag from './assets/bag_2.png'
+import theSimpleBag from './assets/bag_3.png'
+import theTrendyBag from './assets/bag_4.png'
 
 function App() {
     return (<>
@@ -19,27 +23,44 @@ function App() {
         <main>
             <Product
                 isBestSeller = "yes"
+                image= {theHandyBag}
                 title = "The handy bag"
-                price = "€400,-"
+                price = "400"
             />
             <Product
                 isBestSeller = "yes"
+                image = {theStylishBag}
                 title = "The stylish bag"
-                price = "€250,-"
+                price = "250"
             />
             <Product
-            isBestSeller = "yes"
+            isBestSeller = "no"
+            image = {theSimpleBag}
             title = "The sipmle bag"
-            price = "€300,-"
+            price = "300"
         />
             <Product
-                isBestSeller = "yes"
+                isBestSeller = "no"
+                image = {theTrendyBag}
                 title = "The trendy bag"
-                price = "€150,-"
+                price = "150"
             />
 
         </main>
+<footer>
+    <section>
 
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+</footer>
     </>)
 }
 
