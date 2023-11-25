@@ -5,6 +5,9 @@ import theHandyBag from './assets/bag_1.png'
 import theStylishBag from './assets/bag_2.png'
 import theSimpleBag from './assets/bag_3.png'
 import theTrendyBag from './assets/bag_4.png'
+import Tile from "./components/Tile.jsx";
+import brands from "./assets/brand.png"
+import story from "./assets/our_story.png"
 
 function App() {
     return (<>
@@ -48,6 +51,23 @@ function App() {
 
         </main>
 <footer>
+    <Tile
+    tileTitle = "the brand"
+    tileText = "this is text"
+    image ="none"
+    />
+    <Tile
+        image ={brands}
+    />
+    <Tile
+        image = {story}
+    />
+    <Tile
+        tileTitle = "our story"
+        tileText = "this is text"
+        image ="none"
+
+    />
     <section>
 
     </section>
